@@ -1,1 +1,14 @@
-<h1>Make your form here</h1>
+<h1>Pirates</h1>
+
+<h1>Pirates</h1>
+<p> Name: <%= @pirate.name %></p>
+<p> Height: <%= @pirate.height%> </p>
+<p> Weight: <%= @pirate.weight%> </p>
+
+
+<h2> Ships</h2>
+<% @ships.each do |ship| %>
+<p> Name: <%= ship.name %> </p>
+<p> Type: <%= ship.type %> </p>
+<p> Booty: <%= ship.booty %> </p>
+<% end %>
